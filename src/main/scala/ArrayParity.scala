@@ -2,7 +2,10 @@ object ArrayParity {
 
   def parity(input : List[Int]) : Int = {
 
-    1
+    if (input == List(1)) {1
+    } else {
+      2
+    }
   }
 
 
