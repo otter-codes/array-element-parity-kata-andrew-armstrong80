@@ -20,6 +20,10 @@ class ArrayParitySpec extends WordSpec with MustMatchers {
       ArrayParity.parity(List(1, -1, 2, -2, 3, -3, -4)) mustEqual -4
     }
 
+    "return an Int when given a List with 2 matching positive elements" in {
+      ArrayParity.parity(List(1, -1, 2, -2, 3, -3, 4, 4)) mustEqual 4
+    }
+
   }
 
 }
