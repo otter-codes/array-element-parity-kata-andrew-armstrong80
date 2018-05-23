@@ -16,6 +16,10 @@ class ArrayParitySpec extends WordSpec with MustMatchers {
       ArrayParity.parity(List(1, -1, 2, -2, 3, -3, 4)) mustEqual 4
     }
 
+    "return a negative Int when given a List with multiple elements" in {
+      ArrayParity.parity(List(1, -1, 2, -2, 3, -3, -4)) mustEqual -4
+    }
+
   }
 
 }
